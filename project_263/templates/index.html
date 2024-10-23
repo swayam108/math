@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+body{
+    background-color: rgb(67, 67, 133);
+    color: aliceblue;
+    text-align: center;
+}
+select {
+    height: 50px;
+    width: 20%;
+    border-radius: 10px;
+    font-weight: bold !important;
+    color: #000 !important;
+    background:  #ffe6e6 !important;
+    text-transform: uppercase;
+}
+input{
+    height: 50px;
+    width: 20%;
+    border-radius: 10px;
+    border-width: 0px;
+    font-size: 18;
+}
+.btn{
+    color: aliceblue;
+    background-color: rgb(108, 156, 37);
+}
+.btn:hover{
+    background-color: rgb(94, 135, 33);
+    font-size: 20px;
+    transition-duration: 0.1s;
+}
+   
+</style>
+</head>
+
+<!--##NO predefine-->
+<body>
+    <h1>Advance Calculator!</h1>  <br>
+    <img width="20%" height="27%" src="static\img.png " />
+    <form method="POST">
+        <h3 >Enter expression</h3><br><br>
+        <select class="is-focused is-large select" name="operation" aria-label="operationDropdown">
+            <option>Choose operation</option>
+            <option value="simplify">Simplify</option>
+            <option value="factor">Factor</option>
+        </select>
+    <input placeholder="Expression" name="text">
+    <input type="submit" class="btn btn-success btn-lg">
+</form>
+
+
+    <p>Your equation is {{equation}} = {{ result }}</p>
+</body>
+</html>
